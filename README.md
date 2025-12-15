@@ -48,9 +48,9 @@ This project aims to predict in-hospital mortality among critically ill patients
   | Model | CV Type | Key Parameters |
   |:------|:---------|:---------------|
   | Logistic Regression | Manual grid-search | `C ∈ {0.01, 0.1, 1, 10, 100}` |
-  | Linear SVM | Manual grid-search | `C ∈ {0.01, 0.1, 1, 10, 100}` |
-  | Random Forest | Manual grid-search | `max_depth ∈ {1, 3, 10, 30, 100}`, `max_features ∈ {0.5, 0.75, 1.0}` |
-  | XGBoost | 5-fold KFold + early stopping | `max_depth ∈ {1, 3, 10, 30, 100}`, `reg_alpha ∈ {0.1, 1, 10}`, `reg_lambda ∈ {0.1, 1, 10}`, `n_estimators = 10000 with early stopping` |
+  | Linear SVM | Manual grid-search | `C ∈ {0.0001, 0.001, 0.01, 0.1, 1}` |
+  | Random Forest | Manual grid-search | `max_depth ∈ {1, 3, 10, 30}`, `max_features ∈ {0.05, 0.1, 0.25, 0.5}` |
+  | XGBoost | 5-fold KFold + early stopping | `max_depth ∈ {1, 3, 10, 30}`, `reg_alpha ∈ {0.01, 0.1, 1}`, `reg_lambda ∈ {0.1, 1, 10}`, `n_estimators = 10000 with early stopping` |
 
 - **Evaluation Metrics:**  
   - Primary: AUC (Area Under ROC Curve)
